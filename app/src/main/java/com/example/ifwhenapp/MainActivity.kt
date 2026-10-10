@@ -32,5 +32,17 @@ class MainActivity : AppCompatActivity() {
         val sym: EditText = findViewById(R.id.sym)
         val check: Button = findViewById(R.id.check)
         val result: TextView = findViewById(R.id.result)
+
+        check.setOnClickListener(){
+            val input = sym.text.toString()
+
+            if (input.isEmpty()){
+                result.text = "Введите символ"
+                return@setOnClickListener
+            }
+
+            val char = input[0]
+        }
+
     }
 }
