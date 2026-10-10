@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/sym"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:text="Ввод"
+        android:textSize="20dp"/>
 
     <Button
         android:id="@+id/check"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:text="Проверить"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_gravity="center_horizontal"
+        android:text="Введите символ и нажмите кнопку"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 </LinearLayout>
