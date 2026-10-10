@@ -42,6 +42,16 @@ class MainActivity : AppCompatActivity() {
             }
 
             val char = input[0]
+
+            if (char !in "a..z"){
+                result.text = "Это не маленькая латинская буква"
+                return@setOnClickListener
+            }
+
+            when(char){
+                'a', 'i', 'e', 'o', 'u' -> result.text = "Это гласные буквы"
+                else -> result.text = "Возможно, это согласные буквы"
+            }
         }
 
     }
