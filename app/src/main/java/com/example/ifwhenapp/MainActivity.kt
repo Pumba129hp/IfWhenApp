@@ -13,35 +13,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.ifwhenapp.ui.theme.IfWhenAppTheme
 
+//Вариант 5. Ввести символ.
+// Если символ не латинская строчная (маленькая) буква – вывести сообщение
+// и закончить выполнение программы,
+// иначе, если это буквы a, i, e, o, u – вывести сообщение: «Это гласные буквы»,
+// для других значений – «Возможно, это согласные буквы».
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContent {
-            IfWhenAppTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    IfWhenAppTheme {
-        Greeting("Android")
+        setContentView (R.layout.activity_main)
     }
 }
