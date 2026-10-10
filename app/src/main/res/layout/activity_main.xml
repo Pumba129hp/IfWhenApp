@@ -11,7 +11,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="200dp"
-        android:text="Ввод"
+        android:text="t"
         android:textSize="20dp"/>
 
     <Button
